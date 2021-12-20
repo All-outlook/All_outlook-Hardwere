@@ -1,0 +1,18 @@
+Partlist exported from C:/Users/zhigu/Desktop/基板データ/anpu.sch at 2021/05/24 19:26
+
+Qty Value     Device          Package       Parts                                     Description                                                                                                 POPULARITY SPICEPREFIX
+1             B2B-XH-A        B2B-XH-A      CN1                                       Wire-to-Board 2.5mm pitch top mount connector                                                                                     
+4             B3B-PH-K-S      B3B-PH-K-S    CN2, CN3, CN4, CN5                        JST PH series header 2.00mm pitch disconnectable crimp style connectors, vertical (side entry type), 3 pins                       
+3   0.1       1608            CON           U$27, U$28, U$29                                                                                                                                                            
+10  0.1       C-EU050-030X075 C050-030X075  C1, C2, C3, C4, C7, C8, C9, C10, C11, C12 CAPACITOR, European symbol                                                                                  9          C          
+4   0.47      KINZOKUTEIKOU   KINZOKUTEIKOU U$36, U$37, U$38, U$39                                                                                                                                                      
+2   10        CPOL-EUE2.5-5   E2,5-5        C5, C6                                    POLARIZED CAPACITOR, European symbol                                                                        16         C          
+6   100       R               1608          U$2, U$3, U$13, U$14, U$15, U$16                                                                                                                                            
+6   10k       R               1608          U$9, U$10, U$17, U$20, U$21, U$22                                                                                                                                           
+4   1k        R               1608          U$7, U$8, U$11, U$12                                                                                                                                                        
+3   4580DD    4580DD          4580DD        U$1, U$4, U$6                                                                                                                                                               
+2   47k       R               1608          U$18, U$19                                                                                                                                                                  
+4   A1359     MJE2955         TO220AV       A1, A2, A3, A4                            PNP TRANSISTOR                                                                                              0                     
+4   C3422     2SC3212V        TO220AV       T1, T2, T3, T4                            NPN Epitaxial Planar Trnasitor RF Power Amplifier                                                           0                     
+1   CONVERTER CONVERTER       CONVERTER     U$5                                                                                                                                                                         
+4   FG        FG              FG            U$23, U$24, U$25, U$26                                                                                                                                                      
