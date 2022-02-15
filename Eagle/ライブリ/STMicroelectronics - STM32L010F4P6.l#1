@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle>
+    <drawing>
+        <grid unitdist="mm" unit="mm"/>
+        <layers>
+            <layer name="Top" color="4" number="1" visible="yes" active="yes" fill="1"/>
+            <layer name="tKeepout" color="0" number="4" visible="yes" active="yes" fill="1"/>
+            <layer name="Bottom" color="4" number="16" visible="yes" active="yes" fill="1"/>
+            <layer name="tPlace" color="7" number="21" visible="yes" active="yes" fill="1"/>
+            <layer name="bPlace" color="7" number="22" visible="yes" active="yes" fill="1"/>
+            <layer name="tNames" color="7" number="25" visible="yes" active="yes" fill="1"/>
+            <layer name="bNames" color="7" number="26" visible="yes" active="yes" fill="1"/>
+            <layer name="tValues" color="7" number="27" visible="yes" active="yes" fill="1"/>
+            <layer name="bValues" color="7" number="28" visible="yes" active="yes" fill="1"/>
+            <layer name="tStop" color="7" number="29" visible="yes" active="yes" fill="1"/>
+            <layer name="bStop" color="7" number="30" visible="yes" active="yes" fill="1"/>
+            <layer name="tCream" color="7" number="31" visible="yes" active="yes" fill="1"/>
+            <layer name="bCream" color="7" number="32" visible="yes" active="yes" fill="1"/>
+            <layer name="bKeepout" color="0" number="40" visible="yes" active="yes" fill="1"/>
+            <layer name="tRestrict" color="4" number="41" visible="yes" active="yes" fill="1"/>
+            <layer name="bRestrict" color="4" number="42" visible="yes" active="yes" fill="1"/>
+            <layer name="tDocu" color="7" number="51" visible="yes" active="yes" fill="1"/>
+            <layer name="bDocu" color="7" number="52" visible="yes" active="yes" fill="1"/>
+            <layer name="Nets" color="2" number="91" visible="yes" active="yes" fill="1"/>
+            <layer name="Busses" color="1" number="92" visible="yes" active="yes" fill="1"/>
+            <layer name="Pins" color="2" number="93" visible="yes" active="yes" fill="1"/>
+            <layer name="Symbols" color="4" number="94" visible="yes" active="yes" fill="1"/>
+            <layer name="Names" color="7" number="95" visible="yes" active="yes" fill="1"/>
+            <layer name="Values" color="7" number="96" visible="yes" active="yes" fill="1"/>
+            <layer name="Info" color="7" number="97" visible="yes" active="yes" fill="1"/>
+            <layer name="Guide" color="6" number="98" visible="yes" active="yes" fill="1"/>
+        </layers>
+        <library name="Upverter Library">
+            <description>Upverter Parts Library
+
+Created by Upverter.com</description>
+            <packages>
+                <package name="STMICROELECTRONICS_STM32L010F4P6_0">
+                    <description>ARM® Cortex®-M0+ STM32L0 Microcontroller IC 32-Bit 32MHz 16KB (16K x 8) FLASH 20-TSSOP</description>
+                    <wire layer="51" y2="3.3" width="0.15" x2="-2.25" y1="-3.3" x1="-2.25"/>
+                    <wire layer="51" y2="3.3" width="0.15" x2="2.25" y1="3.3" x1="-2.25"/>
+                    <wire layer="51" y2="-3.3" width="0.15" x2="2.25" y1="3.3" x1="2.25"/>
+                    <wire layer="51" y2="-3.3" width="0.15" x2="-2.25" y1="-3.3" x1="2.25"/>
+                    <wire layer="41" y2="3.55" width="0.1" x2="-3.65" y1="-3.55" x1="-3.65"/>
+                    <wire layer="41" y2="3.55" width="0.1" x2="3.65" y1="3.55" x1="-3.65"/>
+                    <wire layer="41" y2="-3.55" width="0.1" x2="3.65" y1="3.55" x1="3.65"/>
+                    <wire layer="41" y2="-3.55" width="0.1" x2="-3.65" y1="-3.55" x1="3.65"/>
+                    <wire layer="21" y2="3.3" width="0.15" x2="1.825" y1="3.3" x1="-1.825"/>
+                    <wire layer="21" y2="-3.3" width="0.15" x2="1.825" y1="-3.3" x1="-1.825"/>
+                    <text layer="25" align="bottom-left" y="3.6" x="-2.25" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="3.125" x="-4.05" layer="21" radius="0.25" width="0.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.35" dy="0.4" y="2.925" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="0" dx="1.35" dy="0.4" y="2.275" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="0" dx="1.35" dy="0.4" y="1.625" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="0" dx="1.35" dy="0.4" y="0.975" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="0" dx="1.35" dy="0.4" y="0.325" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-0.325" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-0.975" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-1.625" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-2.275" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-2.925" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-2.925" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-2.275" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-1.625" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-0.975" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="0" dx="1.35" dy="0.4" y="-0.325" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="0" dx="1.35" dy="0.4" y="0.325" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="0" dx="1.35" dy="0.4" y="0.975" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="0" dx="1.35" dy="0.4" y="1.625" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="0" dx="1.35" dy="0.4" y="2.275" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="0" dx="1.35" dy="0.4" y="2.925" x="2.875" rot="R0" cream="yes"/>
+                </package>
+                <package name="STMICROELECTRONICS_STM32L010F4P6_1">
+                    <description>ARM® Cortex®-M0+ STM32L0 Microcontroller IC 32-Bit 32MHz 16KB (16K x 8) FLASH 20-TSSOP</description>
+                    <wire layer="51" y2="3.25" width="0.15" x2="-2.2" y1="-3.25" x1="-2.2"/>
+                    <wire layer="51" y2="3.25" width="0.15" x2="2.2" y1="3.25" x1="-2.2"/>
+                    <wire layer="51" y2="-3.25" width="0.15" x2="2.2" y1="3.25" x1="2.2"/>
+                    <wire layer="51" y2="-3.25" width="0.15" x2="-2.2" y1="-3.25" x1="2.2"/>
+                    <wire layer="41" y2="3.75" width="0.1" x2="-4.353" y1="-3.75" x1="-4.353"/>
+                    <wire layer="41" y2="3.75" width="0.1" x2="4.353" y1="3.75" x1="-4.353"/>
+                    <wire layer="41" y2="-3.75" width="0.1" x2="4.353" y1="3.75" x1="4.353"/>
+                    <wire layer="41" y2="-3.75" width="0.1" x2="-4.353" y1="-3.75" x1="4.353"/>
+                    <wire layer="21" y2="3.25" width="0.15" x2="-1.398" y1="-3.25" x1="-1.398"/>
+                    <wire layer="21" y2="3.25" width="0.15" x2="1.398" y1="3.25" x1="-1.398"/>
+                    <wire layer="21" y2="-3.25" width="0.15" x2="1.398" y1="3.25" x1="1.398"/>
+                    <wire layer="21" y2="-3.25" width="0.15" x2="-1.398" y1="-3.25" x1="1.398"/>
+                    <text layer="25" align="bottom-left" y="4.45" x="-4.853" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="2.5" x="-0.648" layer="21" radius="0.5" width="0.0"/>
+                    <circle y="2.925" x="-4.353" layer="21" radius="0.25" width="0.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.955" dy="0.421" y="2.925" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="1.955" dy="0.421" y="2.275" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="1.955" dy="0.421" y="1.625" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="1.955" dy="0.421" y="0.975" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="1.955" dy="0.421" y="0.325" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-0.325" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-0.975" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-1.625" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-2.275" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-2.925" x="-2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-2.925" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-2.275" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-1.625" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-0.975" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="1.955" dy="0.421" y="-0.325" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="1.955" dy="0.421" y="0.325" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="1.955" dy="0.421" y="0.975" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="1.955" dy="0.421" y="1.625" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="1.955" dy="0.421" y="2.275" x="2.875" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="1.955" dy="0.421" y="2.925" x="2.875" rot="R0" cream="yes"/>
+                </package>
+                <package name="STMICROELECTRONICS_STM32L010F4P6_2">
+                    <description>ARM® Cortex®-M0+ STM32L0 Microcontroller IC 32-Bit 32MHz 16KB (16K x 8) FLASH 20-TSSOP</description>
+                    <wire layer="51" y2="3.25" width="0.15" x2="-2.2" y1="-3.25" x1="-2.2"/>
+                    <wire layer="51" y2="3.25" width="0.15" x2="2.2" y1="3.25" x1="-2.2"/>
+                    <wire layer="51" y2="-3.25" width="0.15" x2="2.2" y1="3.25" x1="2.2"/>
+                    <wire layer="51" y2="-3.25" width="0.15" x2="-2.2" y1="-3.25" x1="2.2"/>
+                    <wire layer="41" y2="3.5" width="0.1" x2="-3.903" y1="-3.5" x1="-3.903"/>
+                    <wire layer="41" y2="3.5" width="0.1" x2="3.903" y1="3.5" x1="-3.903"/>
+                    <wire layer="41" y2="-3.5" width="0.1" x2="3.903" y1="3.5" x1="3.903"/>
+                    <wire layer="41" y2="-3.5" width="0.1" x2="-3.903" y1="-3.5" x1="3.903"/>
+                    <wire layer="21" y2="3.25" width="0.15" x2="-1.498" y1="-3.25" x1="-1.498"/>
+                    <wire layer="21" y2="3.25" width="0.15" x2="1.498" y1="3.25" x1="-1.498"/>
+                    <wire layer="21" y2="-3.25" width="0.15" x2="1.498" y1="3.25" x1="1.498"/>
+                    <wire layer="21" y2="-3.25" width="0.15" x2="-1.498" y1="-3.25" x1="1.498"/>
+                    <text layer="25" align="bottom-left" y="3.95" x="-4.153" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="2.5" x="-0.748" layer="21" radius="0.5" width="0.0"/>
+                    <circle y="2.925" x="-4.153" layer="21" radius="0.25" width="0.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.655" dy="0.381" y="2.925" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="1.655" dy="0.381" y="2.275" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="1.655" dy="0.381" y="1.625" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="1.655" dy="0.381" y="0.975" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="1.655" dy="0.381" y="0.325" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-0.325" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-0.975" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-1.625" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-2.275" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-2.925" x="-2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-2.925" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-2.275" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-1.625" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-0.975" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="1.655" dy="0.381" y="-0.325" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="1.655" dy="0.381" y="0.325" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="1.655" dy="0.381" y="0.975" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="1.655" dy="0.381" y="1.625" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="1.655" dy="0.381" y="2.275" x="2.825" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="1.655" dy="0.381" y="2.925" x="2.825" rot="R0" cream="yes"/>
+                </package>
+                <package name="STMICROELECTRONICS_STM32L010F4P6_3">
+                    <description>ARM® Cortex®-M0+ STM32L0 Microcontroller IC 32-Bit 32MHz 16KB (16K x 8) FLASH 20-TSSOP</description>
+                    <wire layer="51" y2="3.25" width="0.15" x2="-2.2" y1="-3.25" x1="-2.2"/>
+                    <wire layer="51" y2="3.25" width="0.15" x2="2.2" y1="3.25" x1="-2.2"/>
+                    <wire layer="51" y2="-3.25" width="0.15" x2="2.2" y1="3.25" x1="2.2"/>
+                    <wire layer="51" y2="-3.25" width="0.15" x2="-2.2" y1="-3.25" x1="2.2"/>
+                    <wire layer="41" y2="3.35" width="0.1" x2="-3.553" y1="-3.35" x1="-3.553"/>
+                    <wire layer="41" y2="3.35" width="0.1" x2="3.553" y1="3.35" x1="-3.553"/>
+                    <wire layer="41" y2="-3.35" width="0.1" x2="3.553" y1="3.35" x1="3.553"/>
+                    <wire layer="41" y2="-3.35" width="0.1" x2="-3.553" y1="-3.35" x1="3.553"/>
+                    <wire layer="21" y2="3.25" width="0.15" x2="-1.598" y1="-3.25" x1="-1.598"/>
+                    <wire layer="21" y2="3.25" width="0.15" x2="1.598" y1="3.25" x1="-1.598"/>
+                    <wire layer="21" y2="-3.25" width="0.15" x2="1.598" y1="3.25" x1="1.598"/>
+                    <wire layer="21" y2="-3.25" width="0.15" x2="-1.598" y1="-3.25" x1="1.598"/>
+                    <text layer="25" align="bottom-left" y="3.65" x="-3.653" rot="R0" size="1.0">&gt;NAME</text>
+                    <circle y="2.5" x="-0.848" layer="21" radius="0.5" width="0.0"/>
+                    <circle y="2.925" x="-3.953" layer="21" radius="0.25" width="0.0"/>
+                    <smd layer="1" thermals="yes" name="1" stop="yes" roundness="0" dx="1.355" dy="0.341" y="2.925" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="2" stop="yes" roundness="100" dx="1.355" dy="0.341" y="2.275" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="3" stop="yes" roundness="100" dx="1.355" dy="0.341" y="1.625" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="4" stop="yes" roundness="100" dx="1.355" dy="0.341" y="0.975" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="5" stop="yes" roundness="100" dx="1.355" dy="0.341" y="0.325" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="6" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-0.325" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="7" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-0.975" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="8" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-1.625" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="9" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-2.275" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="10" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-2.925" x="-2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="11" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-2.925" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="12" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-2.275" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="13" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-1.625" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="14" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-0.975" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="15" stop="yes" roundness="100" dx="1.355" dy="0.341" y="-0.325" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="16" stop="yes" roundness="100" dx="1.355" dy="0.341" y="0.325" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="17" stop="yes" roundness="100" dx="1.355" dy="0.341" y="0.975" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="18" stop="yes" roundness="100" dx="1.355" dy="0.341" y="1.625" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="19" stop="yes" roundness="100" dx="1.355" dy="0.341" y="2.275" x="2.775" rot="R0" cream="yes"/>
+                    <smd layer="1" thermals="yes" name="20" stop="yes" roundness="100" dx="1.355" dy="0.341" y="2.925" x="2.775" rot="R0" cream="yes"/>
+                </package>
+            </packages>
+            <symbols>
+                <symbol name="STMICROELECTRONICS_STM32L010F4P6_0_0">
+                    <description>ARM® Cortex®-M0+ STM32L0 Microcontroller IC 32-Bit 32MHz 16KB (16K x 8) FLASH 20-TSSOP</description>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="0.0" y1="-45.72" x1="0.0"/>
+                    <wire layer="94" y2="-5.08" width="0.508" x2="40.64" y1="-5.08" x1="0.0"/>
+                    <wire layer="94" y2="-45.72" width="0.508" x2="40.64" y1="-5.08" x1="40.64"/>
+                    <wire layer="94" y2="-45.72" width="0.508" x2="0.0" y1="-45.72" x1="40.64"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="0.0" y1="-30.48" x1="0.0"/>
+                    <wire layer="94" y2="-40.64" width="0.15" x2="0.0" y1="-40.64" x1="0.0"/>
+                    <wire layer="94" y2="-43.18" width="0.15" x2="0.0" y1="-43.18" x1="0.0"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="0.0" y1="-17.78" x1="0.0"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="0.0" y1="-10.16" x1="0.0"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="0.0" y1="-22.86" x1="0.0"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="0.0" y1="-33.02" x1="0.0"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="0.0" y1="-7.62" x1="0.0"/>
+                    <wire layer="94" y2="-7.62" width="0.15" x2="40.64" y1="-7.62" x1="40.64"/>
+                    <wire layer="94" y2="-10.16" width="0.15" x2="40.64" y1="-10.16" x1="40.64"/>
+                    <wire layer="94" y2="-12.7" width="0.15" x2="40.64" y1="-12.7" x1="40.64"/>
+                    <wire layer="94" y2="-15.24" width="0.15" x2="40.64" y1="-15.24" x1="40.64"/>
+                    <wire layer="94" y2="-17.78" width="0.15" x2="40.64" y1="-17.78" x1="40.64"/>
+                    <wire layer="94" y2="-20.32" width="0.15" x2="40.64" y1="-20.32" x1="40.64"/>
+                    <wire layer="94" y2="-22.86" width="0.15" x2="40.64" y1="-22.86" x1="40.64"/>
+                    <wire layer="94" y2="-25.4" width="0.15" x2="40.64" y1="-25.4" x1="40.64"/>
+                    <wire layer="94" y2="-27.94" width="0.15" x2="40.64" y1="-27.94" x1="40.64"/>
+                    <wire layer="94" y2="-30.48" width="0.15" x2="40.64" y1="-30.48" x1="40.64"/>
+                    <wire layer="94" y2="-33.02" width="0.15" x2="40.64" y1="-33.02" x1="40.64"/>
+                    <wire layer="94" y2="-43.18" width="0.15" x2="40.64" y1="-43.18" x1="40.64"/>
+                    <text layer="95" align="top-left" y="-2.54" x="2.54" rot="R0" size="2.54">&gt;NAME</text>
+                    <text layer="95" align="top-left" y="-46.736" x="20.32" rot="R0" size="2.54">STM32L010F4P6</text>
+                    <pin direction="in" name="PB9-BOOT0" visible="both" length="middle" y="-30.48" x="-5.08"/>
+                    <pin direction="io" name="PC14-OSC32_IN" visible="both" length="middle" y="-40.64" x="-5.08"/>
+                    <pin direction="io" name="PC15-OSC32_OUT" visible="both" length="middle" y="-43.18" x="-5.08"/>
+                    <pin direction="in" name="!RST!" visible="both" length="middle" y="-17.78" x="-5.08"/>
+                    <pin direction="pwr" name="VDDA" visible="both" length="middle" y="-10.16" x="-5.08"/>
+                    <pin direction="io" name="PA0-CK_IN" visible="both" length="middle" y="-22.86" x="-5.08"/>
+                    <pin direction="io" name="PB1" visible="both" length="middle" y="-33.02" x="-5.08"/>
+                    <pin direction="pwr" name="VDD" visible="both" length="middle" y="-7.62" x="-5.08"/>
+                    <pin direction="io" name="PA1" visible="both" length="middle" y="-7.62" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA2" visible="both" length="middle" y="-10.16" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA3" visible="both" length="middle" y="-12.7" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA4" visible="both" length="middle" y="-15.24" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA5" visible="both" length="middle" y="-17.78" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA6" visible="both" length="middle" y="-20.32" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA7" visible="both" length="middle" y="-22.86" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA9" visible="both" length="middle" y="-25.4" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA10" visible="both" length="middle" y="-27.94" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA13" visible="both" length="middle" y="-30.48" x="45.72" rot="R180"/>
+                    <pin direction="io" name="PA14" visible="both" length="middle" y="-33.02" x="45.72" rot="R180"/>
+                    <pin direction="pwr" name="VSS" visible="both" length="middle" y="-43.18" x="45.72" rot="R180"/>
+                </symbol>
+            </symbols>
+            <devicesets>
+                <deviceset prefix="U" name="STMICROELECTRONICS_STM32L010F4P6">
+                    <description>ARM® Cortex®-M0+ STM32L0 Microcontroller IC 32-Bit 32MHz 16KB (16K x 8) FLASH 20-TSSOP</description>
+                    <gates>
+                        <gate name="G$0" symbol="STMICROELECTRONICS_STM32L010F4P6_0_0" x="0"/>
+                    </gates>
+                    <devices>
+                        <device name="STMICROELECTRONICS_STM32L010F4P6_0_0" package="STMICROELECTRONICS_STM32L010F4P6_0">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="PB9-BOOT0"/>
+                                <connect gate="G$0" pad="2" pin="PC14-OSC32_IN"/>
+                                <connect gate="G$0" pad="3" pin="PC15-OSC32_OUT"/>
+                                <connect gate="G$0" pad="4" pin="!RST!"/>
+                                <connect gate="G$0" pad="5" pin="VDDA"/>
+                                <connect gate="G$0" pad="6" pin="PA0-CK_IN"/>
+                                <connect gate="G$0" pad="7" pin="PA1"/>
+                                <connect gate="G$0" pad="8" pin="PA2"/>
+                                <connect gate="G$0" pad="9" pin="PA3"/>
+                                <connect gate="G$0" pad="10" pin="PA4"/>
+                                <connect gate="G$0" pad="11" pin="PA5"/>
+                                <connect gate="G$0" pad="12" pin="PA6"/>
+                                <connect gate="G$0" pad="13" pin="PA7"/>
+                                <connect gate="G$0" pad="14" pin="PB1"/>
+                                <connect gate="G$0" pad="15" pin="VSS"/>
+                                <connect gate="G$0" pad="16" pin="VDD"/>
+                                <connect gate="G$0" pad="17" pin="PA9"/>
+                                <connect gate="G$0" pad="18" pin="PA10"/>
+                                <connect gate="G$0" pad="19" pin="PA13"/>
+                                <connect gate="G$0" pad="20" pin="PA14"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="Cortex M0+ 16K TSSOP20 85°C"/>
+                                    <attribute name="number_of_I2C_channels" value="1"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":150000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":250000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":10000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="ambient_temperature_range_low" value="-40°C"/>
+                                    <attribute name="mouser_part_number" value="511-STM32L010F4P6"/>
+                                    <attribute name="mfg_package_ident_rev" value="3"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":550000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":450000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":50000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="max_junction_temp" value="+105°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":350000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":350000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":30000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="number_of_I/Os" value="16"/>
+                                    <attribute name="number_of_cores" value="1"/>
+                                    <attribute name="temperature_range_high" value="+105°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="digikey_description" value="IC 16/32-BITS MICROS"/>
+                                    <attribute name="device_class_L3" value="Microcontrollers"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="digikey_part_number" value="497-19364-ND"/>
+                                    <attribute name="frequency" value="32MHz"/>
+                                    <attribute name="core_architecture" value="Arm Cortex-M0+"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="memory_type" value="FLASH"/>
+                                    <attribute name="temperature_range_low" value="-40°C"/>
+                                    <attribute name="memory_size" value="16KBytes"/>
+                                    <attribute name="number_of_A/D_converters" value="1"/>
+                                    <attribute name="data_bus_width" value="32bits"/>
+                                    <attribute name="RAM_size" value="2KBytes"/>
+                                    <attribute name="number_of_timers/counters" value="7"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,USART,SMBus,Other"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="number_of_SPI_channels" value="1"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1.2mm"/>
+                                    <attribute name="mfg_package_ident" value="TSSOP20-YA"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="ipc_land_pattern_name" value="SOP65P640X120-20"/>
+                                    <attribute name="MPN" value="STM32L010F4P6"/>
+                                    <attribute name="number_of_ADC_channels" value="7"/>
+                                    <attribute name="min_supply_voltage" value="1.8V"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="datasheet" value="https://www.st.com/resource/en/datasheet/stm32l010f4.pdf"/>
+                                    <attribute name="package" value="TSSOP20"/>
+                                    <attribute name="mfg_package_ident_date" value="0"/>
+                                    <attribute name="standoff_height" value="0.05mm"/>
+                                    <attribute name="MF" value="STMicroelectronics"/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="number_of_UART_channels" value="1"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L2" value="Embedded Processors and Controllers"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="STMICROELECTRONICS_STM32L010F4P6_0_1" package="STMICROELECTRONICS_STM32L010F4P6_1">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="PB9-BOOT0"/>
+                                <connect gate="G$0" pad="2" pin="PC14-OSC32_IN"/>
+                                <connect gate="G$0" pad="3" pin="PC15-OSC32_OUT"/>
+                                <connect gate="G$0" pad="4" pin="!RST!"/>
+                                <connect gate="G$0" pad="5" pin="VDDA"/>
+                                <connect gate="G$0" pad="6" pin="PA0-CK_IN"/>
+                                <connect gate="G$0" pad="7" pin="PA1"/>
+                                <connect gate="G$0" pad="8" pin="PA2"/>
+                                <connect gate="G$0" pad="9" pin="PA3"/>
+                                <connect gate="G$0" pad="10" pin="PA4"/>
+                                <connect gate="G$0" pad="11" pin="PA5"/>
+                                <connect gate="G$0" pad="12" pin="PA6"/>
+                                <connect gate="G$0" pad="13" pin="PA7"/>
+                                <connect gate="G$0" pad="14" pin="PB1"/>
+                                <connect gate="G$0" pad="15" pin="VSS"/>
+                                <connect gate="G$0" pad="16" pin="VDD"/>
+                                <connect gate="G$0" pad="17" pin="PA9"/>
+                                <connect gate="G$0" pad="18" pin="PA10"/>
+                                <connect gate="G$0" pad="19" pin="PA13"/>
+                                <connect gate="G$0" pad="20" pin="PA14"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="Cortex M0+ 16K TSSOP20 85°C"/>
+                                    <attribute name="number_of_I2C_channels" value="1"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":150000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":250000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":10000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="ambient_temperature_range_low" value="-40°C"/>
+                                    <attribute name="mouser_part_number" value="511-STM32L010F4P6"/>
+                                    <attribute name="mfg_package_ident_rev" value="3"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":550000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":450000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":50000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="max_junction_temp" value="+105°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":350000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":350000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":30000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="number_of_I/Os" value="16"/>
+                                    <attribute name="number_of_cores" value="1"/>
+                                    <attribute name="temperature_range_high" value="+105°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="digikey_description" value="IC 16/32-BITS MICROS"/>
+                                    <attribute name="device_class_L3" value="Microcontrollers"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="digikey_part_number" value="497-19364-ND"/>
+                                    <attribute name="frequency" value="32MHz"/>
+                                    <attribute name="core_architecture" value="Arm Cortex-M0+"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="memory_type" value="FLASH"/>
+                                    <attribute name="temperature_range_low" value="-40°C"/>
+                                    <attribute name="memory_size" value="16KBytes"/>
+                                    <attribute name="number_of_A/D_converters" value="1"/>
+                                    <attribute name="data_bus_width" value="32bits"/>
+                                    <attribute name="RAM_size" value="2KBytes"/>
+                                    <attribute name="number_of_timers/counters" value="7"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,USART,SMBus,Other"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="number_of_SPI_channels" value="1"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1.2mm"/>
+                                    <attribute name="mfg_package_ident" value="TSSOP20-YA"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="ipc_land_pattern_name" value="SOP65P640X120-20"/>
+                                    <attribute name="MPN" value="STM32L010F4P6"/>
+                                    <attribute name="number_of_ADC_channels" value="7"/>
+                                    <attribute name="min_supply_voltage" value="1.8V"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="datasheet" value="https://www.st.com/resource/en/datasheet/stm32l010f4.pdf"/>
+                                    <attribute name="package" value="TSSOP20"/>
+                                    <attribute name="mfg_package_ident_date" value="0"/>
+                                    <attribute name="standoff_height" value="0.05mm"/>
+                                    <attribute name="MF" value="STMicroelectronics"/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="number_of_UART_channels" value="1"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L2" value="Embedded Processors and Controllers"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="STMICROELECTRONICS_STM32L010F4P6_0_2" package="STMICROELECTRONICS_STM32L010F4P6_2">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="PB9-BOOT0"/>
+                                <connect gate="G$0" pad="2" pin="PC14-OSC32_IN"/>
+                                <connect gate="G$0" pad="3" pin="PC15-OSC32_OUT"/>
+                                <connect gate="G$0" pad="4" pin="!RST!"/>
+                                <connect gate="G$0" pad="5" pin="VDDA"/>
+                                <connect gate="G$0" pad="6" pin="PA0-CK_IN"/>
+                                <connect gate="G$0" pad="7" pin="PA1"/>
+                                <connect gate="G$0" pad="8" pin="PA2"/>
+                                <connect gate="G$0" pad="9" pin="PA3"/>
+                                <connect gate="G$0" pad="10" pin="PA4"/>
+                                <connect gate="G$0" pad="11" pin="PA5"/>
+                                <connect gate="G$0" pad="12" pin="PA6"/>
+                                <connect gate="G$0" pad="13" pin="PA7"/>
+                                <connect gate="G$0" pad="14" pin="PB1"/>
+                                <connect gate="G$0" pad="15" pin="VSS"/>
+                                <connect gate="G$0" pad="16" pin="VDD"/>
+                                <connect gate="G$0" pad="17" pin="PA9"/>
+                                <connect gate="G$0" pad="18" pin="PA10"/>
+                                <connect gate="G$0" pad="19" pin="PA13"/>
+                                <connect gate="G$0" pad="20" pin="PA14"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="Cortex M0+ 16K TSSOP20 85°C"/>
+                                    <attribute name="number_of_I2C_channels" value="1"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":150000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":250000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":10000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="ambient_temperature_range_low" value="-40°C"/>
+                                    <attribute name="mouser_part_number" value="511-STM32L010F4P6"/>
+                                    <attribute name="mfg_package_ident_rev" value="3"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":550000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":450000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":50000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="max_junction_temp" value="+105°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":350000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":350000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":30000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="number_of_I/Os" value="16"/>
+                                    <attribute name="number_of_cores" value="1"/>
+                                    <attribute name="temperature_range_high" value="+105°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="digikey_description" value="IC 16/32-BITS MICROS"/>
+                                    <attribute name="device_class_L3" value="Microcontrollers"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="digikey_part_number" value="497-19364-ND"/>
+                                    <attribute name="frequency" value="32MHz"/>
+                                    <attribute name="core_architecture" value="Arm Cortex-M0+"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="memory_type" value="FLASH"/>
+                                    <attribute name="temperature_range_low" value="-40°C"/>
+                                    <attribute name="memory_size" value="16KBytes"/>
+                                    <attribute name="number_of_A/D_converters" value="1"/>
+                                    <attribute name="data_bus_width" value="32bits"/>
+                                    <attribute name="RAM_size" value="2KBytes"/>
+                                    <attribute name="number_of_timers/counters" value="7"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,USART,SMBus,Other"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="number_of_SPI_channels" value="1"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1.2mm"/>
+                                    <attribute name="mfg_package_ident" value="TSSOP20-YA"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="ipc_land_pattern_name" value="SOP65P640X120-20"/>
+                                    <attribute name="MPN" value="STM32L010F4P6"/>
+                                    <attribute name="number_of_ADC_channels" value="7"/>
+                                    <attribute name="min_supply_voltage" value="1.8V"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="datasheet" value="https://www.st.com/resource/en/datasheet/stm32l010f4.pdf"/>
+                                    <attribute name="package" value="TSSOP20"/>
+                                    <attribute name="mfg_package_ident_date" value="0"/>
+                                    <attribute name="standoff_height" value="0.05mm"/>
+                                    <attribute name="MF" value="STMicroelectronics"/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="number_of_UART_channels" value="1"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L2" value="Embedded Processors and Controllers"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                        <device name="STMICROELECTRONICS_STM32L010F4P6_0_3" package="STMICROELECTRONICS_STM32L010F4P6_3">
+                            <connects>
+                                <connect gate="G$0" pad="1" pin="PB9-BOOT0"/>
+                                <connect gate="G$0" pad="2" pin="PC14-OSC32_IN"/>
+                                <connect gate="G$0" pad="3" pin="PC15-OSC32_OUT"/>
+                                <connect gate="G$0" pad="4" pin="!RST!"/>
+                                <connect gate="G$0" pad="5" pin="VDDA"/>
+                                <connect gate="G$0" pad="6" pin="PA0-CK_IN"/>
+                                <connect gate="G$0" pad="7" pin="PA1"/>
+                                <connect gate="G$0" pad="8" pin="PA2"/>
+                                <connect gate="G$0" pad="9" pin="PA3"/>
+                                <connect gate="G$0" pad="10" pin="PA4"/>
+                                <connect gate="G$0" pad="11" pin="PA5"/>
+                                <connect gate="G$0" pad="12" pin="PA6"/>
+                                <connect gate="G$0" pad="13" pin="PA7"/>
+                                <connect gate="G$0" pad="14" pin="PB1"/>
+                                <connect gate="G$0" pad="15" pin="VSS"/>
+                                <connect gate="G$0" pad="16" pin="VDD"/>
+                                <connect gate="G$0" pad="17" pin="PA9"/>
+                                <connect gate="G$0" pad="18" pin="PA10"/>
+                                <connect gate="G$0" pad="19" pin="PA13"/>
+                                <connect gate="G$0" pad="20" pin="PA14"/>
+                            </connects>
+                            <technologies>
+                                <technology>
+                                    <attribute name="mouser_description" value="Cortex M0+ 16K TSSOP20 85°C"/>
+                                    <attribute name="number_of_I2C_channels" value="1"/>
+                                    <attribute name="footprint_parameters_3" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":150000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":250000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":10000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":100000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"C (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="ambient_temperature_range_low" value="-40°C"/>
+                                    <attribute name="mouser_part_number" value="511-STM32L010F4P6"/>
+                                    <attribute name="mfg_package_ident_rev" value="3"/>
+                                    <attribute name="footprint_parameters_1" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":550000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":450000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":50000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":500000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"A (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="max_junction_temp" value="+105°C"/>
+                                    <attribute name="footprint_parameters_2" value='{"fp_type":"TSSOP2","params":{"N":{"nom":20,"long name":"Number of leads","min":null,"max":null,"short name":"N","type":"count"},"A":{"nom":false,"long name":"Height","min":false,"max":1200000,"short name":"A","type":"measurement"},"A1":{"nom":false,"long name":"Package clearance","min":50000,"max":150000,"short name":"A1","type":"measurement"},"A2":{"nom":1000000,"long name":"Package height","min":800000,"max":1050000,"short name":"A2","type":"measurement"},"D":{"nom":6500000,"long name":"Package length","min":6400000,"max":6600000,"short name":"D","type":"measurement"},"E":{"nom":6400000,"long name":"Width /w leads","min":6200000,"max":6600000,"short name":"E","type":"measurement"},"E1":{"nom":4400000,"long name":"Package width","min":4300000,"max":4500000,"short name":"E1","type":"measurement"},"B":{"nom":false,"long name":"Lead width","min":190000,"max":300000,"short name":"B","type":"measurement"},"C":{"nom":false,"long name":"Lead thickness","min":90000,"max":200000,"short name":"C","type":"measurement"},"L":{"nom":600000,"long name":"Lead foot length","min":450000,"max":750000,"short name":"L","type":"measurement"},"e":{"nom":650000,"long name":"Lead pitch","min":null,"max":null,"short name":"e","type":"measurement"},"PHI":{"nom":false,"long name":"Lead angle","min":0,"max":8000000,"short name":"PHI","type":"measurement"},"HT":{"default":"No","long name":"Thermal pad","type":"multichoiceparent","short name":"HT","children":[]},"offset x":{"nom":0,"long name":"X Center offset","min":null,"max":null,"short name":"offset x","type":"measurement"},"offset y":{"nom":0,"long name":"Y Center offset","min":null,"max":null,"short name":"offset y","type":"measurement"},"LS":{"default":"Rounded rectangle","long name":"Land shape","type":"multichoice","short name":"LS"},"LS1":{"default":"Rectangle","long name":"Land shape (Pin 1)","type":"multichoice","short name":"LS1"},"solder toe":{"nom":350000,"long name":"Solder fillet (toe)","min":null,"max":null,"short name":"solder toe","type":"fixedmeasurement"},"solder heel":{"nom":350000,"long name":"Solder fillet (heel)","min":null,"max":null,"short name":"solder heel","type":"fixedmeasurement"},"solder side":{"nom":30000,"long name":"Solder fillet (side)","min":null,"max":null,"short name":"solder side","type":"fixedmeasurement"},"courtyard":{"nom":250000,"long name":"Courtyard","min":null,"max":null,"short name":"courtyard","type":"fixedmeasurement"},"SF":{"default":"B (&gt; 0.625mm pitch)","long name":"Packing level","type":"multichoiceparent","short name":"SF","help":"http://support.upverter.com/customer/portal/articles/978783-what-is-a-footprint-packing-level","children":["solder toe","solder heel","solder side","courtyard"]}}}'/>
+                                    <attribute name="number_of_I/Os" value="16"/>
+                                    <attribute name="number_of_cores" value="1"/>
+                                    <attribute name="temperature_range_high" value="+105°C"/>
+                                    <attribute name="ambient_temperature_range_high" value="+85°C"/>
+                                    <attribute name="digikey_description" value="IC 16/32-BITS MICROS"/>
+                                    <attribute name="device_class_L3" value="Microcontrollers"/>
+                                    <attribute name="device_class_L1" value="Integrated Circuits (ICs)"/>
+                                    <attribute name="digikey_part_number" value="497-19364-ND"/>
+                                    <attribute name="frequency" value="32MHz"/>
+                                    <attribute name="core_architecture" value="Arm Cortex-M0+"/>
+                                    <attribute name="max_supply_voltage" value="3.6V"/>
+                                    <attribute name="prefix" value="U"/>
+                                    <attribute name="memory_type" value="FLASH"/>
+                                    <attribute name="temperature_range_low" value="-40°C"/>
+                                    <attribute name="memory_size" value="16KBytes"/>
+                                    <attribute name="number_of_A/D_converters" value="1"/>
+                                    <attribute name="data_bus_width" value="32bits"/>
+                                    <attribute name="RAM_size" value="2KBytes"/>
+                                    <attribute name="number_of_timers/counters" value="7"/>
+                                    <attribute name="interface" value="I2C,SPI,UART,USART,SMBus,Other"/>
+                                    <attribute name="automotive" value="No"/>
+                                    <attribute name="number_of_SPI_channels" value="1"/>
+                                    <attribute name="lead_free" value="Yes"/>
+                                    <attribute name="height" value="1.2mm"/>
+                                    <attribute name="mfg_package_ident" value="TSSOP20-YA"/>
+                                    <attribute name="footprint_variant_name_0" value="Recommended_Land_Pattern"/>
+                                    <attribute name="footprint_variant_name_2" value="IPC_B"/>
+                                    <attribute name="footprint_variant_name_3" value="IPC_C"/>
+                                    <attribute name="ipc_land_pattern_name" value="SOP65P640X120-20"/>
+                                    <attribute name="MPN" value="STM32L010F4P6"/>
+                                    <attribute name="number_of_ADC_channels" value="7"/>
+                                    <attribute name="min_supply_voltage" value="1.8V"/>
+                                    <attribute name="rohs" value="Yes"/>
+                                    <attribute name="datasheet" value="https://www.st.com/resource/en/datasheet/stm32l010f4.pdf"/>
+                                    <attribute name="package" value="TSSOP20"/>
+                                    <attribute name="mfg_package_ident_date" value="0"/>
+                                    <attribute name="standoff_height" value="0.05mm"/>
+                                    <attribute name="MF" value="STMicroelectronics"/>
+                                    <attribute name="footprint_variant_name_1" value="IPC_A"/>
+                                    <attribute name="number_of_UART_channels" value="1"/>
+                                    <attribute name="verification_version" value="0.0.0.3"/>
+                                    <attribute name="centroid_not_specified" value="No"/>
+                                    <attribute name="device_class_L2" value="Embedded Processors and Controllers"/>
+                                </technology>
+                            </technologies>
+                        </device>
+                    </devices>
+                </deviceset>
+            </devicesets>
+        </library>
+    </drawing>
+</eagle>
